@@ -1,14 +1,43 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 <head>
-  <title>Minha IA</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IA Generativa</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Cormorant+Garamond:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <h1>Converse com a IA</h1>
-  <input type="text" id="userInput" placeholder="Digite sua pergunta">
-  <button onclick="sendMessage()">Enviar</button>
-  <p id="response"></p>
-  <script src="main.js"></script>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h2>Histórico</h2>
+            </div>
+            <ul class="conversation-history">
+                <!-- O histórico de conversas será populado aqui via JS -->
+                <li><a href="#">Nova Conversa</a></li>
+            </ul>
+        </aside>
+        <main class="chat-main">
+            <header class="chat-header">
+                <div class="profile-icon">
+                    <span>👤</span>
+                </div>
+            </header>
+            <div id="chat-window" class="chat-window">
+                <!-- As mensagens do chat aparecerão aqui -->
+            </div>
+            <div class="chat-input-area">
+                <input type="text" id="userInput" placeholder="Digite sua mensagem...">
+                <button onclick="sendMessage()">Enviar</button>
+            </div>
+            <footer class="chat-footer">
+                <p>Inteligencias Artificiais Podem cometer erros, certifique-se de checar duas vezes, e a use com cautela.</p>
+            </footer>
+        </main>
+    </div>
+    <script src="main.js"></script>
 </body>
 </html>
